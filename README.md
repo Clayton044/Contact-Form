@@ -27,12 +27,6 @@ A simple, responsive contact form built with React, featuring form validation an
 3. Click the **Submit** button to submit the form if all validations pass.
 4. Error messages will appear below invalid fields to guide the user.
 
-## Screenshots
-
-![Contact Form Screenshot](screenshot.png)
-
-*Note: Replace `screenshot.png` with an actual screenshot of your form if available.*
-
 ## Implementation Details
 
 The `ContactForm` component uses a custom `useForm` hook to handle:
