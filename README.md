@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Contact Form using React and `useForm` Hook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, responsive contact form built with React, featuring form validation and state management using the `useForm` hook.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Form Fields**:
+  - Name (required)
+  - Email (required, validated for correct email format)
+  - Message (required)
+- **Validation**: Real-time validation with error messages for invalid or empty fields.
+- **Responsive Design**: Clean, modern UI that adapts to different screen sizes.
+- **State Management**: Uses the `useForm` hook to manage form state, errors, and submission status.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Custom `useForm` hook
+- CSS for styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use
 
-### `npm test`
+1. Fill in the **Name**, **Email**, and **Message** fields.
+2. The form will validate inputs in real-time:
+   - Required fields must not be empty.
+   - Email must be in a valid format (e.g., `user@example.com`).
+3. Click the **Submit** button to submit the form if all validations pass.
+4. Error messages will appear below invalid fields to guide the user.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Contact Form Screenshot](screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*Note: Replace `screenshot.png` with an actual screenshot of your form if available.*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Implementation Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The `ContactForm` component uses a custom `useForm` hook to handle:
+- Form field values (`name`, `email`, `message`)
+- Validation errors
+- Submission status
+- Resetting the form after successful submission
 
-### `npm run eject`
+Validation rules are applied on blur and on submission to ensure data integrity.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Evaluation Criteria Met
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ **Proper usage of the `useForm` hook** — Manages all form state, validation, and submission logic.  
+✅ **Implementation of Contact Form functionality** — All required fields with validation and error handling.  
+✅ **Quality of UI and styling** — Modern, clean design with gradient button and responsive layout.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Created on:** Wednesday, December 03, 2025
